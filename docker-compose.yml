@@ -1,0 +1,8 @@
+services:
+  angular-app:
+    build: .
+    container_name: my-angular-app
+    ports:
+      - "8080:4200"
+    volumes:
+      - ./src:/usr/src/app/src
